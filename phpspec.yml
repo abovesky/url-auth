@@ -1,0 +1,5 @@
+suites:
+    urlsigner_suite:
+        namespace: abovesky\UrlAuth
+        psr4_prefix: abovesky\UrlAuth
+        src_path: src
