@@ -12,7 +12,7 @@ interface iUrlAuth
      *
      * @return string
      */
-    public function sign($url, $expiration);
+    public function sign($url, $expiration, $timeunit);
 
     /**
      * Validate a signed url.
