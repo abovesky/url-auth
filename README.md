@@ -3,7 +3,7 @@
 This package can create URLs with a limited lifetime. This is done by adding an expiration date and a signature to the URL.
 
 ```php
-$urlAuth = new Md5UrlAuth('randomkey');
+$urlAuth = new Md5('randomkey');
 
 $urlAuth->sign('https://myapp.com', 30, 'days');
 
@@ -19,8 +19,6 @@ your application can validate it with:
 $urlAuth->validate('https://myapp.com/?expires=xxxx&signature=xxxx');
 ```
 
-Spatie is a webdesign agency in Antwerp, Belgium. You'll find an overview of all our open source projects [on our website](https://spatie.be/opensource).
-
 ## Installation
 
 The package can installed via Composer:
@@ -33,9 +31,9 @@ composer require abovesky/url-auth
 A signer-object can sign URLs and validate signed URLs. A secret key is used to generate signatures.
 
 ```php
-use abovesky\UrlAuth\Md5UrlAuth;
+use abovesky\UrlAuth\Md5;
 
-$urlAuth = new Md5UrlAuth('mysecretkey');
+$urlAuth = new Md5('mysecretkey');
 ```
 
 ### Generating URLs
@@ -75,7 +73,7 @@ $urlAuth->validate('https://myapp.com/?expires=1439223344&signature=2d42f65bd0-I
 ## Writing custom signers
 This packages provides a signer that uses md5 to generate signature. You can create your own
 signer by implementing the `abovesky\UrlAuth\iUrlAuth`-interface. If you let your signer extend
-`abovesky\UrlAuth\BaseUrlAuth` you'll only need to provide the `createSignature`-method.
+`abovesky\UrlAuth\Base` you'll only need to provide the `createSignature`-method.
 
 ## Tests
 
@@ -87,4 +85,4 @@ $ vendor/bin/phpspec run
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
