@@ -8,7 +8,7 @@ use League\Url\UrlImmutable;
 use abovesky\UrlAuth\Exceptions\InvalidExpiration;
 use abovesky\UrlAuth\Exceptions\InvalidSignatureKey;
 
-abstract class BaseUrlAuth implements iUrlAuth
+abstract class Base implements iUrlAuth
 {
     /**
      * The key that is used to generate secure signatures.

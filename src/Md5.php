@@ -2,7 +2,7 @@
 
 namespace abovesky\UrlAuth;
 
-class Md5UrlAuth extends BaseUrlAuth
+class Md5 extends Base
 {
     /**
      * Generate a token to identify the secure action.
