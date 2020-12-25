@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":307:{a:2:{s:7:"defects";a:1:{s:51:"abovesky\UrlAuth\Tests\Md5Test::testCreateSignature";i:4;}s:5:"times";a:3:{s:51:"abovesky\UrlAuth\Tests\Md5Test::testCreateSignature";d:0.004;s:55:"abovesky\UrlAuth\Tests\BaseTest::testConstructException";d:0.101;s:46:"abovesky\UrlAuth\Tests\BaseTest::testConstruct";d:0.008;}}}
