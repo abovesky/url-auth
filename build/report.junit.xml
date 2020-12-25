@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="3" assertions="8" errors="0" warnings="0" failures="0" skipped="0" time="0.112776">
+    <testsuite name="Unit" tests="3" assertions="8" errors="0" warnings="0" failures="0" skipped="0" time="0.112776">
+      <testsuite name="abovesky\UrlAuth\Tests\BaseTest" file="/mnt/d/php/url-auth/tests/BaseTest.php" tests="2" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.109248">
+        <testcase name="testConstructException" class="abovesky\UrlAuth\Tests\BaseTest" classname="abovesky.UrlAuth.Tests.BaseTest" file="/mnt/d/php/url-auth/tests/BaseTest.php" line="9" assertions="1" time="0.100922"/>
+        <testcase name="testConstruct" class="abovesky\UrlAuth\Tests\BaseTest" classname="abovesky.UrlAuth.Tests.BaseTest" file="/mnt/d/php/url-auth/tests/BaseTest.php" line="16" assertions="6" time="0.008326"/>
+      </testsuite>
+      <testsuite name="abovesky\UrlAuth\Tests\Md5Test" file="/mnt/d/php/url-auth/tests/Md5Test.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.003528">
+        <testcase name="testCreateSignature" class="abovesky\UrlAuth\Tests\Md5Test" classname="abovesky.UrlAuth.Tests.Md5Test" file="/mnt/d/php/url-auth/tests/Md5Test.php" line="10" assertions="1" time="0.003528"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

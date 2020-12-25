@@ -223,4 +223,19 @@ abstract class Base implements iUrlAuth
 
         return hash_equals($validSignature, $providedSignature);
     }
+
+    public function getSignatureKey()
+    {
+        return $this->signatureKey;
+    }
+
+    public function getExpiresParameter()
+    {
+        return $this->expiresParameter;
+    }
+
+    public function getSignatureParameter()
+    {
+        return $this->signatureParameter;
+    }
 }
